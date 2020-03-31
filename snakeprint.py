@@ -13,8 +13,14 @@ def snail(array):
         n**2 long array including the snake formatted original array.
     """
     a = []
+    # while there are still elements in the array
     while array:
+        # get the entire first row
         a.extend(list(array.pop(0)))
+        # match the nested list with its counterparts, meaning [[1,2], becomes [[1,3],
+        #                                                       [3,4]]          [2,4]]
         array = list(zip(*array))
+        # reverse the list to [[2,4],
+        #                      [1,3]]
         array.reverse()
     return a

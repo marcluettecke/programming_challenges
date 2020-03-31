@@ -49,3 +49,7 @@ def valid(f):
         return not re.search(r'\b0[0-9]', f) and eval(f) is True
     except ArithmeticError:
         return False
+
+
+if __name__ == '__main__':
+    print(solve("ABC + DAB == 1182"))

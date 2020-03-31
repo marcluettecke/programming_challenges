@@ -35,7 +35,7 @@ def zebra_puzzle():
     """
     Function to solve the Zebra puzzle (https://en.wikipedia.org/wiki/Zebra_Puzzle)
     Returns:
-        Return a tuple (WATER, ZEBRA indicating their house numbers.
+        Return a tuple (WATER, ZEBRA) indicating their house numbers.
     """
 
     houses = first, _, middle, _, _ = [1, 2, 3, 4, 5]
